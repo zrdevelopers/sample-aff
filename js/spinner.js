@@ -7,6 +7,42 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 5000); // 5 seconds delay
 });
 
+// Start Kemenagan
+function getRandomColor() {
+  const colors = ['#FF5733', '#33FF57', '#3357FF', '#F0E68C', '#FF33F6']; // Tambahkan warna yang diinginkan
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function createSnowflakes() {
+  const snowflakeCount = 100; // Adjust the number of snowflakes
+  const modalContent = document.querySelector('.modal-content');
+
+  for (let i = 0; i < snowflakeCount; i++) {
+      const snowflake = document.createElement('div');
+      snowflake.className = 'snow';
+      
+      // Randomize the position
+      snowflake.style.left = Math.random() * 100 + 'vw';
+      
+      // Randomize the animation duration
+      snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Between 2s to 5s
+
+      // Set a random color for the snowflake
+      snowflake.style.backgroundColor = getRandomColor();
+      
+      modalContent.appendChild(snowflake);
+      
+      // Remove the snowflake after the animation
+      snowflake.addEventListener('animationend', () => {
+          snowflake.remove();
+      });
+  }
+}
+
+// Call createSnowflakes when the modal is shown
+document.getElementById('winningModal').addEventListener('shown.bs.modal', createSnowflakes);
+// Endd Kemenangan
+
 const sectors = [
   { color: "#FFBC03", text: "#333333", label: "Voucher 10%" },
   { color: "#FF5A10", text: "#333333", label: "Cashback $5" },
