@@ -1,0 +1,78 @@
+
+.no-style {
+  text-decoration: none;
+  color: inherit;
+}
+
+.round-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.infografis-rounded {
+  width: 282px;
+  height: 460px;
+  border-radius: 4%;
+  overflow: hidden;
+}
+
+.main .body-container .navbar-menu .navbar-content .menubar .nav .menubar-link.activate {
+  font-weight: bold;
+  color: #a72583;
+  border-bottom: 2px #a72583 solid;
+  background-image: url("/theme/frontend/wtpd/src/assets/icons/active.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.main .body-container .breadcrumb {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin: auto;
+  max-width: 1440px;
+  gap: .5rem;
+}
+
+.main .body-container .breadcrumb .active {
+  color: #a72583;
+}
+
+@media (max-width: 991.98px) {
+  .main .body-container .breadcrumb {
+    padding-left: 1.5rem;
+    margin-top: 5.77rem;
+  }
+}
+
+.link-go {
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #c90000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.link-go:hover {
+  opacity: 0.9; /* Decrease opacity on hover */
+}
+
+.border-bottom-none {
+  border-bottom: none !important;
+}
+
+.modal-header-close {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+}
+
+.border-top-none {
+  border-top: none !important;
+}

@@ -1,0 +1,64 @@
+#spin_the_wheel {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Allow the wheel to fill the parent container */
+  max-width: 400px; /* Set a maximum width */
+}
+
+#wheel {
+  display: block;
+  width: 100%; /* Make the wheel responsive */
+  height: auto; /* Adjust height automatically */
+}
+
+#spin {
+  font: 1.2em/0 "Lato", sans-serif;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60%; /*50%;*/
+  left: 55%; /*50%;*/
+  width: 20%; /*30%;*/
+  height: 20%; /*30%;*/
+  margin: -15%;
+  background: #fff;
+  color: #fff;
+  box-shadow: 0 0 0 8px currentColor, 0 0px 15px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  transition: 0.8s;
+  border: none;
+}
+
+#spin::after {
+  content: "";
+  position: absolute;
+  top: -17px;
+  border: 10px solid transparent;
+  border-bottom-color: currentColor;
+  border-top: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #spin {
+    top: 63%;
+    left: 57.5%;
+    width: 15%;
+    height: 15%;
+    font: 0.9em/0 "Lato", sans-serif;
+  }
+}
+
+.body-spin {
+  background-color: #00000078 !important;
+}
+
+#spinValue {
+    padding: 10px;
+    border-radius: 10px;
+ color: "#333333"
+}
