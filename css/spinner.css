@@ -20,10 +20,10 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 60%; /*50%;*/
+  top: 61%; /*50%;*/
   left: 55%; /*50%;*/
   width: 20%; /*30%;*/
-  height: 20%; /*30%;*/
+  height: 17%; /*30%;*/
   margin: -15%;
   background: #fff;
   color: #fff;
@@ -48,7 +48,7 @@
     top: 63%;
     left: 57.5%;
     width: 15%;
-    height: 15%;
+    height: 13%;
     font: 0.9em/0 "Lato", sans-serif;
   }
 }
